@@ -2,9 +2,15 @@
 	"global": {
 		"menuWidth": "260dp"
 	}, 
-	"env:development": {}, 
-	"env:test": {}, 
-	"env:production": {}, 
+	"env:development": {
+		"JUGApi": "http://www.jug-montpellier.org/api/"
+	}, 
+	"env:test": {
+		"JUGApi": "http://www.jug-montpellier.org/api/"
+	}, 
+	"env:production": {
+		"JUGApi": "http://www.jug-montpellier.org/api/"
+	}, 
 	"os:ios": {}, 
 	"os:android": {}, 
 	"dependencies": {}
