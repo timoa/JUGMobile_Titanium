@@ -2,8 +2,7 @@
 	color: "#fff"
 },
 "TableView": {
-	width: Ti.UI.FILL,
-	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL
 },
 ".containerView": {
 	visible: true
@@ -17,7 +16,7 @@
 "#currentView": {
 	top: 0,
 	width: Ti.UI.FILL,
-	height: "200dp",
+	height: Ti.UI.SIZE,
 	backgroundGradient: {
 		type: 'linear',
 		startPoint: { x: '50%', y: '0%' },
@@ -27,8 +26,15 @@
 	layout: "vertical"
 },
 "#titleLabel": {
+	top: "10dp",
 	font: {
 		fontSize: "30dp",
+		fontWeight: "bold"
+	}
+},
+"#titleLabel[platform=ios]": {
+	font: {
+		fontSize: "28dp",
 		fontWeight: "bold"
 	}
 },
@@ -39,8 +45,15 @@
 	}
 },
 "#descLabel": {
+	bottom: "20dp",
 	font: {
 		fontSize: "18dp",
+		fontWeight: "bold"
+	}
+},
+"#descLabel[platform=ios]": {
+	font: {
+		fontSize: "16dp",
 		fontWeight: "bold"
 	}
 }
