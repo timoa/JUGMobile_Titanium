@@ -1,13 +1,20 @@
 /*
  * Libs : Chargement des librairies
  */
-var JUG = require('JUG');
+var JUG = require('JUG'),
+	Moment = require('alloy/moment');
 
+/*
+ * Init
+ */
+Moment.weekdays = L('moment_weekdays').split("_");
+Moment.months = L('moment_months').split("_");
+Moment.monthsShort = L('moment_monthsShort').split("_");
 
 /*
  * Mise à jour de la liste des événements
  */
-function updateEvent(_data) {	
+function updateEvent(_data) {
 	
 	var rows = [];
 	
@@ -15,9 +22,27 @@ function updateEvent(_data) {
 		
 		// Mise à jour de l'événement courant (currentView)
 		if(dataId==0) {
-			$.titleLabel.text = _data[dataId].title;
-			$.dateLabel.text = _data[dataId].date;
-			$.descLabel.text = JUG.cutText(_data[dataId].description, 100);
+			
+			// Mise à jour du titre (traitement par lot)
+			$.titleLabel.applyProperties({
+				text: _data[dataId].title,
+				visible: true
+			});
+			
+			// Mise à jour de la date
+			$.dateLabel.applyProperties({
+				text: Moment(_data[dataId].date).format('dddd DD MMMM YYYY'),
+				visible: true
+			});
+			
+			// Mise à jour de la description
+			$.descLabel.applyProperties({
+				text: JUG.cutText(_data[dataId].description, 100),
+				visible: true
+			});
+			
+			// Mise à jour de currentView pour s'adapter à la hauteur du contenu
+			$.currentView.animate(JUG.currentViewShow());
 		}	
 		
 		else {
