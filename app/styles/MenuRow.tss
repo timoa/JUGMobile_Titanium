@@ -1,3 +1,31 @@
-".container": {
-	backgroundColor: "white"
+"#menuRow": {
+	height: "55dp",
+	backgroundColor: "transparent",
+	className: "menu_row"
+},
+"#separator": {
+	bottom: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: '1dp',
+	backgroundColor: '#353b3f'
+},
+"#icon": {
+	left: 0,
+	width: '60dp',
+	height: Ti.UI.SIZE,
+	color: '#999',
+	textAlign: 'center',
+	font: {
+		fontSize: '50dp',
+		fontFamily: 'Entypo'
+	}
+},
+"#item": {
+	left: '60dp',
+	height: Ti.UI.SIZE,
+	color: "#ffffff",
+	font: {
+		fontSize: '20dp'
+	}
 }
