@@ -1,4 +1,8 @@
 <Alloy>
-	<View class="container">
+	<View id="menuView">
+		<View id="headerView">
+			<Label id="titleLabel"/>
+		</View>
+		<TableView id="menuList"/>
 	</View>
 </Alloy>
