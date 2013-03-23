@@ -1,18 +1,15 @@
-Welcome to your Appcelerator Titanium Mobile Project
+JUGMobile Titanium
+==================
+Application mobile du JUG réalisée avec le framework Appcelerator Titanium + Alloy.
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
+Ce projet Titanium permet de générer l'application pour les plateformes iOS (iPhone & iPad), Android et MobileWeb (version HTML5).
 
+[Captures d'écran à venir]
 
+Historique
+==========
+Cette application a été créée lors de la présentation de Titanium + Alloy, 20 mars 2013 au JUG de Montpellier.
 
-----------------------------------
-Stuff our legal folk make us say:
+Lien vers l'événement : http://www.jug-montpellier.org/event/15
 
-Appcelerator, Appcelerator Titanium and associated marks and logos are 
-trademarks of Appcelerator, Inc. 
-
-Titanium is Copyright (c) 2008-2013 by Appcelerator, Inc. All Rights Reserved.
-
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
-
+[Lien vers les slides à venir]
