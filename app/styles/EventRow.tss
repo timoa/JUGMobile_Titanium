@@ -1,32 +1,36 @@
 "#eventRow": {
-	height: "55dp",
+	height: "70dp",
 	backgroundColor: "transparent",
 	className: "event_row"
 },
+"#dateLabel": {
+	left: "5dp",
+	width: "40dp",
+	height: Ti.UI.FILL,
+	color: "#d62e04",
+	font: {
+		fontSize: "12dp",
+		fontWeight: "bold"
+	},
+	textAlign: "center"
+},
 "#titleLabel": {
 	top: "5dp",
-	left: "10dp",
-	height: Ti.UI.SIZE,
-	color: "#666",
-	font: {
-		fontSize: "18dp"
-	}
-},
-"#dateLabel": {
-	right: "5dp",
-	width: "80dp",
-	height: Ti.UI.SIZE,
-	color: "#666",
-	font: {
-		fontSize: "14dp"
-	},
-	textAlign: "right"
-},
-"#descLabel": {
-	top: "30dp",
-	left: '10dp',
+	left: "50dp",
+	right: "10dp",
 	width: Ti.UI.FILL,
 	height: Ti.UI.SIZE,
+	color: "#666",
+	font: {
+		fontSize: "16dp"
+	}
+},
+"#descLabel": {
+	top: "25dp",
+	left: '50dp',
+	right: "10dp",
+	width: Ti.UI.FILL,
+	height: "35dp",
 	color: "#999",
 	font: {
 		fontSize: "14dp"

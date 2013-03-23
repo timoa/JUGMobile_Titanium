@@ -50,6 +50,7 @@
 "#descLabel": {
 	top: "5dp",
 	bottom: "20dp",
+	height: "60dp",
 	font: {
 		fontSize: "16dp",
 		fontWeight: "bold"

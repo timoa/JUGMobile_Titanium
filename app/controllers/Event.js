@@ -9,7 +9,7 @@ var JUG = require('JUG'),
  */
 Moment.weekdays = L('moment_weekdays').split("_");
 Moment.months = L('moment_months').split("_");
-Moment.monthsShort = L('moment_monthsShort').split("_");
+Moment.monthsShort = L('moment_months_short').split("_");
 
 /*
  * Mise à jour de la liste des événements
@@ -31,13 +31,13 @@ function updateEvent(_data) {
 			
 			// Mise à jour de la date
 			$.dateLabel.applyProperties({
-				text: Moment(_data[dataId].date).format('dddd DD MMMM YYYY'),
+				text: Moment(_data[dataId].date).format("dddd DD MMMM YYYY"),
 				visible: true
 			});
 			
 			// Mise à jour de la description
 			$.descLabel.applyProperties({
-				text: JUG.cutText(_data[dataId].description, 100),
+				text: _data[dataId].description,
 				visible: true
 			});
 			
@@ -46,15 +46,23 @@ function updateEvent(_data) {
 		}	
 		
 		else {
+			// Test de la date (ou sinon ça plante avec une date vide)
+			var dateD = _data[dataId].date ? Moment(_data[dataId].date).format("DD") : '';
+			var dateM = _data[dataId].date ? Moment(_data[dataId].date).format("MMM") : '';
+			var dateY = _data[dataId].date ? Moment(_data[dataId].date).format("YYYY") : '';
+			
 			// Création d'une ligne pour la liste à partir du contrôleur EventRow
 			var row = Alloy.createController('EventRow', {
+				date: dateD + '\n' + dateM + '\n' + dateY,
 				title: _data[dataId].title,
-				date: _data[dataId].date,
-				description: JUG.cutText(_data[dataId].description, 45),
+				description: _data[dataId].description,
 				rowId: _data[dataId].id
-			}).getView();
+			}).getView();			
 			rows.push(row);
 			
+			dateD = null;
+			dateM = null;
+			dateY = null;
 			row = null;
 		}
 						
