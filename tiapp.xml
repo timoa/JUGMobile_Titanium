@@ -17,7 +17,7 @@
     <analytics>false</analytics>
     <guid>93be7c49-45c4-4f78-8260-5750aa734aba</guid>
     <property name="ti.ui.defaultunit" type="string">system</property>
-    <iphone>
+    <ios>
         <orientations device="iphone">
             <orientation>Ti.UI.PORTRAIT</orientation>
         </orientations>
@@ -27,7 +27,16 @@
             <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
             <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
         </orientations>
-    </iphone>
+        <plist>
+            <dict>
+                <key>UIAppFonts</key>
+                <array>
+                    <string>fonts/Entypo.otf</string>
+                    <string>fonts/EntypoSocial.otf</string>
+                </array>
+            </dict>
+        </plist>
+    </ios>
     <android xmlns:android="http://schemas.android.com/apk/res/android"/>
     <mobileweb>
         <precache/>
