@@ -3,7 +3,7 @@
  */
 
 /*
- * UI --------------------------------------------
+ * UI -------------------------------------------
  */
 
 	/*
@@ -25,7 +25,7 @@
 
 
 /*
- * Network ---------------------------------------
+ * Network --------------------------------------
  */
 
 	/*
@@ -107,7 +107,27 @@
 
 
 /*
- * Exports
+ * Utils ----------------------------------------
+ */
+
+	/*
+	 * cutText()
+	 * 
+	 * @text (string): Texte à couper
+	 * @limit (string): Limite pour la coupe du texte
+	 */
+	function cutText(_text, _limit) {
+		if(_text.length > _limit) {
+			return _text.substring(0,(_limit-3)) + '...';
+		} else {
+			return _text;
+		}
+	};
+
+
+/*
+ * Exports --------------------------------------
  */
 exports.menuShow = menuShow;
 exports.httpRequest = httpRequest;
+exports.cutText = cutText;
