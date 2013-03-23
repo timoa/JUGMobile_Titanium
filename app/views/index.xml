@@ -1,5 +1,6 @@
 <Alloy>
 	<Window class="container">
 		<Require src="Menu"/>
+		<Require src="Event"/>
 	</Window>
 </Alloy>
