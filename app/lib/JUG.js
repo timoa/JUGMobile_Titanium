@@ -12,10 +12,23 @@
 	 * @left (integer): Valeur pour l'ouverture ou fermeture du menu
 	 */
 	function menuShow(_left) {
-	
-		// Create animation
+
 		var animation = Ti.UI.createAnimation({
 			left: _left,
+			curve: Ti.UI.ANIMATION_CURVE_EASE_OUT,
+			duration: 500
+		});
+	
+		return animation;
+	};
+	
+	/*
+	 * Event: currentViewAnimate()
+	 */
+	function currentViewShow() {
+		
+		var animation = Ti.UI.createAnimation({
+			height: Ti.UI.SIZE,
 			curve: Ti.UI.ANIMATION_CURVE_EASE_OUT,
 			duration: 500
 		});
@@ -129,5 +142,6 @@
  * Exports --------------------------------------
  */
 exports.menuShow = menuShow;
+exports.currentViewShow = currentViewShow;
 exports.httpRequest = httpRequest;
 exports.cutText = cutText;
