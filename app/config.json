@@ -1,5 +1,7 @@
 {
-	"global": {}, 
+	"global": {
+		"menuWidth": "260dp"
+	}, 
 	"env:development": {}, 
 	"env:test": {}, 
 	"env:production": {}, 
