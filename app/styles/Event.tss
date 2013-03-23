@@ -1,3 +1,46 @@
-".container": {
-	backgroundColor: "white"
+"Label": {
+	color: "#fff"
+},
+"TableView": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+},
+".containerView": {
+	visible: true
+},
+".currentLabel": {
+	left: "20dp",
+	right: "20dp",
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE
+},
+"#currentView": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: "200dp",
+	backgroundGradient: {
+		type: 'linear',
+		startPoint: { x: '50%', y: '0%' },
+		endPoint: { x: '50%', y: '100%' },
+		colors: [ { color: "#d62e04", offset: 0.0}, { color: "#781a01", offset: 1.0 } ],
+	},
+	layout: "vertical"
+},
+"#titleLabel": {
+	font: {
+		fontSize: "30dp",
+		fontWeight: "bold"
+	}
+},
+"#dateLabel": {
+	font: {
+		fontSize: "18dp",
+		fontWeight: "bold"
+	}
+},
+"#descLabel": {
+	font: {
+		fontSize: "18dp",
+		fontWeight: "bold"
+	}
 }

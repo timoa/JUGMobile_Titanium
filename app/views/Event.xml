@@ -1,4 +1,10 @@
 <Alloy>
-	<View class="container">
+	<View id="Event" class="containerView">
+		<View id="currentView">
+			<Label id="titleLabel" class="currentLabel"/>
+			<Label id="dateLabel" class="currentLabel"/>
+			<Label id="descLabel" class="currentLabel"/>
+		</View>
+		<TableView id="eventList"/>
 	</View>
 </Alloy>
