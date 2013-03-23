@@ -17,7 +17,7 @@ function updateEvent(_data) {
 		if(dataId==0) {
 			$.titleLabel.text = _data[dataId].title;
 			$.dateLabel.text = _data[dataId].date;
-			$.descLabel.text = _data[dataId].description;
+			$.descLabel.text = JUG.cutText(_data[dataId].description, 100);
 		}	
 		
 		else {
@@ -25,7 +25,7 @@ function updateEvent(_data) {
 			var row = Alloy.createController('EventRow', {
 				title: _data[dataId].title,
 				date: _data[dataId].date,
-				description: _data[dataId].description,
+				description: JUG.cutText(_data[dataId].description, 45),
 				rowId: _data[dataId].id
 			}).getView();
 			rows.push(row);
