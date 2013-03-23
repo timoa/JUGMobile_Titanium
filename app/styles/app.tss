@@ -1,0 +1,9 @@
+".containerView": {
+	top: 0,
+	left: 0,
+	width: Ti.Platform.displayCaps.platformWidth,
+	height: Ti.UI.FILL,
+	backgroundColor: "#fff",
+	layout: "vertical",
+	visible: false
+}
