@@ -1,5 +1,10 @@
 "Label": {
-	color: "#fff"
+	left: "20dp",
+	right: "20dp",
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	color: "#fff",
+	visible: false
 },
 "TableView": {
 	width: Ti.UI.FILL
@@ -7,16 +12,10 @@
 ".containerView": {
 	visible: true
 },
-".currentLabel": {
-	left: "20dp",
-	right: "20dp",
-	width: Ti.UI.FILL,
-	height: Ti.UI.SIZE
-},
 "#currentView": {
 	top: 0,
 	width: Ti.UI.FILL,
-	height: Ti.UI.SIZE,
+	height: '10dp',
 	backgroundGradient: {
 		type: 'linear',
 		startPoint: { x: '50%', y: '0%' },
@@ -39,15 +38,20 @@
 	}
 },
 "#dateLabel": {
+	top: "5dp",
+	left: null,
+	right: null,
+	width: Ti.UI.SIZE,
 	font: {
 		fontSize: "18dp",
 		fontWeight: "bold"
 	}
 },
 "#descLabel": {
+	top: "5dp",
 	bottom: "20dp",
 	font: {
-		fontSize: "18dp",
+		fontSize: "16dp",
 		fontWeight: "bold"
 	}
 },
