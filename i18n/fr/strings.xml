@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="app_name">JUG Montpellier</string>
+	
+	<string name="global_loading">Chargement</string>
+	<string name="global_loading_list">Chargement de %s</string>
+	<string name="global_sync">Synchronisation</string>
+	<string name="global_alert_exit_title">Quitter</string>
+	<string name="global_alert_exit_text">Quitter l'application ?</string>
+	<string name="global_alert_exit_button1">Quitter</string>
+	<string name="global_alert_exit_button2">Annuler</string>
+	
+	<string name="global_validate">Valider</string>
+	<string name="global_cancel">Annuler</string>
+	<string name="global_submit">Envoyer</string>
+	<string name="global_submit_save">Enregistrer</string>	
+	<string name="global_refresh">Rafraîchir</string>
+	<string name="global_logout">Déconnexion</string>
+	<string name="global_filter">Filtrer</string>
+	<string name="global_or">ou</string>
+	<string name="global_at">à</string>
+	
+	<string name="date_all">Année</string>
+	<string name="date_january">Janvier</string>
+	<string name="date_february">Février</string>
+	<string name="date_march">Mars</string>
+	<string name="date_april">Avril</string>
+	<string name="date_may">Mai</string>
+	<string name="date_june">Juin</string>
+	<string name="date_july">Juillet</string>
+	<string name="date_august">Août</string>
+	<string name="date_september">Septembre</string>
+	<string name="date_october">Octobre</string>
+	<string name="date_november">Novembre</string>
+	<string name="date_december">Décembre</string>
+	
+	<string name="net_alert_offline_title">Pas de connexion Internet</string>
+	<string name="net_alert_offline_text">Merci d'activer le réseau 3G ou wifi de votre mobile</string>
+	<string name="net_alert_json_title">Contenu non valide</string>
+	<string name="net_alert_json_text">Le contenu envoyé par le serveur n'est pas valide.\nMerci de réessayer plus tard.</string>
+	<string name="net_alert_401_title">Accès refusé</string>
+	<string name="net_alert_401_text">Identifiant ou mot de passe incorrect.\nMerci de les saisir de nouveau et vous reconnecter.</string>
+	<string name="net_alert_404_title">Fichier non trouvé</string>
+	<string name="net_alert_404_text">Le fichier demandé n'as pas été trouvé.\nMerci de réessayer plus tard.</string>
+	<string name="net_alert_406_title">Accès refusé</string>
+	<string name="net_alert_406_text">Identifiant ou mot de passe incorrect.\nMerci de vous reconnecter.</string>
+	<string name="net_alert_503_title">Problème de connexion</string>
+	<string name="net_alert_503_text">Impossible de joindre le serveur.\nVérifier votre connexion Internet et réessayer.</string>
+	
+	<string name="event_title">Événements</string>
+	<string name="speaker_title">Speakers</string>
+	<string name="partner_title">Partenaires</string>
+	<string name="news_title">Actualités</string>
+	<string name="twitter_title">Twitter</string>
+	<string name="about_title">A propos</string>
+	
+</resources>
