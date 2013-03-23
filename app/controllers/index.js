@@ -1,5 +1,3 @@
-function doClick(e) {  
-    alert($.label.text);
-}
+/* Bootstrap de l'application */
 
 $.index.open();
