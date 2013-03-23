@@ -1,3 +1,34 @@
-".container": {
-	backgroundColor: "white"
+"#eventRow": {
+	height: "55dp",
+	backgroundColor: "transparent",
+	className: "event_row"
+},
+"#titleLabel": {
+	top: "5dp",
+	left: "10dp",
+	height: Ti.UI.SIZE,
+	color: "#666",
+	font: {
+		fontSize: "18dp"
+	}
+},
+"#dateLabel": {
+	right: "5dp",
+	width: "80dp",
+	height: Ti.UI.SIZE,
+	color: "#666",
+	font: {
+		fontSize: "14dp"
+	},
+	textAlign: "right"
+},
+"#descLabel": {
+	top: "30dp",
+	left: '10dp',
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	color: "#999",
+	font: {
+		fontSize: "14dp"
+	}
 }
