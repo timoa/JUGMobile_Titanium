@@ -19,20 +19,12 @@
 	<string name="global_filter">Filtrer</string>
 	<string name="global_or">ou</string>
 	<string name="global_at">à</string>
+	<string name="global_the">le</string>
 	
-	<string name="date_all">Année</string>
-	<string name="date_january">Janvier</string>
-	<string name="date_february">Février</string>
-	<string name="date_march">Mars</string>
-	<string name="date_april">Avril</string>
-	<string name="date_may">Mai</string>
-	<string name="date_june">Juin</string>
-	<string name="date_july">Juillet</string>
-	<string name="date_august">Août</string>
-	<string name="date_september">Septembre</string>
-	<string name="date_october">Octobre</string>
-	<string name="date_november">Novembre</string>
-	<string name="date_december">Décembre</string>
+	<string name="moment_weekdays">dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi</string>
+	<string name="moment_weekdays_short">dim._lun._mar._mer._jeu._ven._sam.</string>
+	<string name="moment_months">janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre</string>
+	<string name="moment_months_short">janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.</string>
 	
 	<string name="net_alert_offline_title">Pas de connexion Internet</string>
 	<string name="net_alert_offline_text">Merci d'activer le réseau 3G ou wifi de votre mobile</string>
