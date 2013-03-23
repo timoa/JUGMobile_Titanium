@@ -3,15 +3,13 @@ Application mobile du JUG réalisée avec le framework Appcelerator Titanium + A
 
 Ce projet Titanium permet de générer l'application pour les plateformes iOS (iPhone & iPad), Android et MobileWeb (version HTML5).
 
-(https://raw.github.com/FokkeZB/nl.fokkezb.tweetsView/master/app/widgets/nl.fokkezb.tweetsView/docs/screenshot_list.png)
-
 # Captures d'écran
 ## iPhone
 ### Liste des evénements
-![List view](https://raw.github.com/timoa/JUGMobile_Titanium/blob/master/docs/iphone_event.png)
+![List view](https://raw.github.com/timoa/JUGMobile_Titanium/master/docs/iphone_event.png)
 
 ### Menu
-![List view](https://raw.github.com/timoa/JUGMobile_Titanium/blob/master/docs/iphone_menu.png)
+![List view](https://raw.github.com/timoa/JUGMobile_Titanium/master/docs/iphone_menu.png)
 
 # Historique
 Cette application a été créée lors de la présentation de Titanium + Alloy, 20 mars 2013 au JUG de Montpellier.
