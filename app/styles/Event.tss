@@ -26,10 +26,12 @@
 },
 "#titleLabel": {
 	top: "10dp",
+	width: Ti.UI.FILL,
 	font: {
 		fontSize: "30dp",
 		fontWeight: "bold"
-	}
+	},
+	textAlign: "center"
 },
 "#titleLabel[platform=ios]": {
 	font: {
