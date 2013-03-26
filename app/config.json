@@ -1,6 +1,7 @@
 {
 	"global": {
-		"menuWidth": "260dp"
+		"menuWidth": "260dp",
+		"theme": "montpellier"
 	}, 
 	"env:development": {
 		"JUGApi": "http://www.jug-montpellier.org/api/"

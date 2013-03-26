@@ -1,6 +1,7 @@
 <Alloy>
 	<View id="menuView">
 		<View id="headerView">
+			<ImageView id="logoImage"/>
 			<Label id="titleLabel"/>
 		</View>
 		<TableView id="menuList"/>

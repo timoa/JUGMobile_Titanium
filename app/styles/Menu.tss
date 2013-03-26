@@ -19,12 +19,21 @@
 		type: 'linear',
 		startPoint: { x: '50%', y: '0%' },
 		endPoint: { x: '50%', y: '100%' },
-		colors: [ { color: "#d62e04", offset: 0.0}, { color: "#781a01", offset: 1.0 } ],
-	}
+		colors: [ { color: "#d62e04", offset: 0.0 }, { color: "#781a01", offset: 1.0 } ],
+	},
+	layout: "horizontal"
+},
+"#logoImage": {
+	left: "10dp",
+	top: "3dp",
+	width: "54dp",
+	height: "42dp",
+	image: "/images/logo.png"
 },
 "#titleLabel": {
+	left: "10dp",
 	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
 	color: "#fff",
 	font: {
 		fontSize: "16dp",
