@@ -12,8 +12,17 @@ Ce projet Titanium permet de générer l'application pour les plateformes iOS (i
 ![List view](https://raw.github.com/timoa/JUGMobile_Titanium/master/docs/iphone_menu.png)
 ![List view](https://raw.github.com/timoa/JUGMobile_Titanium/master/docs/android_menu.png)
 
+# Sous le capot
+- Application mobile iPhone, iPad, Android et HTML5 (support à améliorer)
+- Framework Titanium SDK 3.0.2.GA + Alloy 1.0
+
+# Bonnes pratiques
+- Utilisation des polices Entypo et Entypo Social pour les icônes (vectoriel donc pas de perte de qualité)
+- Séparation du texte et du code + support multilingue i18n
+- Support des thèmes pour décliner l'application pour d'autres villes par exemple (thèmes Montpellier par défaut)
+
 # Historique
-Cette application a été créée lors de la présentation de Titanium + Alloy, 20 mars 2013 au JUG de Montpellier.
+Cette application a été créée par Damien Laureaux lors de la présentation de Titanium + Alloy, 20 mars 2013 au JUG de Montpellier.
 
 Lien vers l'événement : http://www.jug-montpellier.org/event/15
 
