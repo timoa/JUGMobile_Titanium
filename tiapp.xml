@@ -37,7 +37,18 @@
             </dict>
         </plist>
     </ios>
-    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <tool-api-level>8</tool-api-level>
+        <manifest android:installLocation="auto" android:versionCode="1" android:versionName="1.0">
+            <uses-sdk android:minSdkVersion="7"/>
+            <application>
+                <activity
+                    android:configChanges="keyboardHidden|orientation"
+                    android:debuggable="true"
+                    android:name="org.appcelerator.titanium.TiActivity" android:screenOrientation="portrait"/>
+            </application>
+        </manifest>
+    </android>
     <mobileweb>
         <precache/>
         <splash>
@@ -48,6 +59,7 @@
     </mobileweb>
     <modules/>
     <deployment-targets>
+        <target device="tizen">false</target>
         <target device="iphone">true</target>
         <target device="ipad">true</target>
         <target device="blackberry">false</target>
