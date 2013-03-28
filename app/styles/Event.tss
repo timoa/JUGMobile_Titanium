@@ -15,14 +15,15 @@
 "#currentView": {
 	top: 0,
 	width: Ti.UI.FILL,
-	height: '10dp',
+	height: 0,
 	backgroundGradient: {
 		type: 'linear',
 		startPoint: { x: '50%', y: '0%' },
 		endPoint: { x: '50%', y: '100%' },
 		colors: [ { color: "#d62e04", offset: 0.0}, { color: "#781a01", offset: 1.0 } ],
 	},
-	layout: "vertical"
+	layout: "vertical",
+	visible: false
 },
 "#titleLabel": {
 	top: "10dp",
