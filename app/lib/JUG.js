@@ -3,6 +3,11 @@
  */
 
 /*
+ * Libs : Chargement des librairies
+ */
+var XHR = require('xhr');
+
+/*
  * UI -------------------------------------------
  */
 
@@ -21,20 +26,6 @@
 	
 		return animation;
 	};
-	
-	/*
-	 * Event: currentViewAnimate()
-	 */
-	function currentViewShow() {
-		
-		var animation = Ti.UI.createAnimation({
-			height: Ti.UI.SIZE,
-			curve: Ti.UI.ANIMATION_CURVE_EASE_OUT,
-			duration: 500
-		});
-	
-		return animation;
-	};
 
 
 /*
@@ -45,8 +36,10 @@
 	 * httpRequest()
 	 * 
 	 * @url (string): URL à appeler
-	 * @format (string): Format des données (JSON, bin)
-	 * @callback(function): Fonction à appeler après réponse du serveur 
+	 * @method (string): Méthode (GET, POST, PUT, etc)
+	 * @data (array): POST data
+	 * @onSuccessCallback (function): Fonction à appeler en cas de succès
+	 * @onErrorCallback (function): Fonction à appeler en cas d'erreur
 	 */
 	function httpRequest(_args) {
 
@@ -56,60 +49,43 @@
 			// Affichage de l'animation de chargement
 			Ti.App.fireEvent('JUG:networkLoadingStart');
 			
-			// Si une URL est présente
-			if(_args.url) {
+			// Callback en cas de succès
+			var onSuccessCallback = function (e) {
 				
-				// Création d'une requête XHR
-				var xhr = Ti.Network.createHTTPClient();
+				// Appel du callback
+				_args.onSuccessCallback(e);
 				
-				// Ajout d'un timeout
-				xhr.timeout = 15000;
-							
-				xhr.onload = function() {
-					
-					if(_args.format === 'json') {
-						var json = JSON.parse(this.responseText);					
-	
-							Ti.API.info('[---Network---] CODE : ' + this.status + ' - MESSAGE : ' + this.statusText);
-							
-							// Si la requête est OK
-							if(xhr.status === 200) {
-								_args.callback(json, this.status, this.statusText);
-							}
-							
-							// End Loading
-							Ti.App.fireEvent('JUG:networkLoadingEnd');
-					}
-					
-					// Binaire
-					else {
-						_args.callback(this.responseData, this.status);
-						
-						// End Loading
-						Ti.App.fireEvent('JUG:networkLoadingEnd');
-					}													
-				};
+				// Fin de l'animation de chargement
+				Ti.App.fireEvent('JUG:networkLoadingEnd');
+			};
+			
+			// Callback en cas d'erreur
+			var onErrorCallback = function (e) {
 				
-				// En cas d'erreur
-				xhr.onerror = function() {
-					Ti.App.fireEvent('JUG:networkError');
-	
-					Ti.API.info('[---Network---] ERROR!');
-					Ti.API.info('[---Network---] CODE: ' + this.status + ' - MESSAGE: ' + this.statusText);
-					
-				};
+				// Appel du callback
+				_args.onErrorCallback(e);
 				
-				// Ouverture de la connexion XHR
-				xhr.open("GET", _args.url);
-				Ti.API.info('[---Network---] URL : ' + _args.url);
-				
-				// Ajout des headers HTTP (toujours entre open() et send())
-				xhr.setRequestHeader('Content-Type','application/json; charset=utf-8');
-				
-				// Envoi de la requête XHR
-				xhr.send();
-				
+				// Fin de l'animation de chargement
+				Ti.App.fireEvent('JUG:networkLoadingEnd');
+			};
+			
+			// Création de l'object XHR
+			var xhr = new XHR();
+			
+			// Options par défaut
+			if(!_args.options) {
+				_args.options = {};
 			}
+			
+			// Lancement de la requête XHR
+			if(_args.method === "POST") {
+				xhr.post(_args.url, _args.data, _args.onSuccessCallback, _args.onErrorCallback, _args.options);
+			}			
+			else {
+				xhr.get(_args.url, _args.onSuccessCallback, _args.onErrorCallback, _args.options);
+			}
+			
+			
 		} // Online
 		
 		else {
@@ -142,6 +118,5 @@
  * Exports --------------------------------------
  */
 exports.menuShow = menuShow;
-exports.currentViewShow = currentViewShow;
 exports.httpRequest = httpRequest;
 exports.cutText = cutText;
