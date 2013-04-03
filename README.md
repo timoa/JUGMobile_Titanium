@@ -26,7 +26,7 @@ Cette application a été créée par Damien Laureaux lors de la présentation d
 
 Lien vers l'événement : http://www.jug-montpellier.org/event/15
 
-[Lien vers les slides à venir]
+Lien vers la présentation (128 slides) : http://fr.slideshare.net/timoafr/jug-montpellier
 
 # TODO
 - [ ] Faire la barre de navigation avec bouton pour afficher le menu et titre de la page
