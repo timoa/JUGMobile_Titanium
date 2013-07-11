@@ -7,9 +7,18 @@ var JUG = require('JUG'),
 /*
  * Init
  */
-Moment.weekdays = L('moment_weekdays').split("_");
-Moment.months = L('moment_months').split("_");
-Moment.monthsShort = L('moment_months_short').split("_");
+if(L('moment_weekdays')) {
+	Ti.API.info("[---Event---] Moment Weekdays: " + L('moment_weekdays'));
+	Moment.weekdays = L('moment_weekdays').split("_");
+}
+if(L('moment_months')) {
+	Ti.API.info("[---Event---] Moment Months: " + L('moment_months'));
+	Moment.months = L('moment_months').split("_");
+}
+if(L('moment_months_short')) {
+	Ti.API.info("[---Event---] Moment Months short: " + L('moment_months_short'));
+	Moment.monthsShort = L('moment_months_short').split("_");
+}
 
 /*
  * Mise à jour de la liste des événements

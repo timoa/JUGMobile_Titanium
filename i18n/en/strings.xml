@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="app_name">JUG Montpellier</string>
+	
+	<string name="global_loading">Loading</string>
+	<string name="global_loading_list">Loading of %s</string>
+	<string name="global_sync">Synchronisation</string>
+	<string name="global_alert_exit_title">Exit</string>
+	<string name="global_alert_exit_text">Are you sure to exit ?</string>
+	<string name="global_alert_exit_button1">Exit</string>
+	<string name="global_alert_exit_button2">Cancel</string>
+	
+	<string name="global_validate">Validate</string>
+	<string name="global_cancel">Cancel</string>
+	<string name="global_submit">Submit</string>
+	<string name="global_submit_save">Save</string>	
+	<string name="global_refresh">Refresh</string>
+	<string name="global_logout">Logout</string>
+	<string name="global_filter">Filter</string>
+	<string name="global_or">or</string>
+	<string name="global_at">at</string>
+	<string name="global_the">the</string>
+	
+	<string name="net_alert_offline_title">No Internet connexion</string>
+	<string name="net_alert_offline_text">Thank you to activate the 3G or wifi network on your mobile</string>
+	<string name="net_alert_json_title">Content not valid</string>
+	<string name="net_alert_json_text">The content sent by the server is not valid.\nPlease try again later</string>
+	<string name="net_alert_401_title">Access denied</string>
+	<string name="net_alert_401_text">Username or password is incorrect.\nPlease re-enter and reconnect</string>
+	<string name="net_alert_404_title">File not found</string>
+	<string name="net_alert_404_text">The requested file did not found.\nPlease try again later</string>
+	<string name="net_alert_406_title">Access refused</string>
+	<string name="net_alert_406_text">Username or password is incorrect.\nThank you to reconnect</string>
+	<string name="net_alert_503_title">Connexion problem</string>
+	<string name="net_alert_503_text">Impossible to join the server.\nCheck your Internet connexion and retry</string>
+	
+	<string name="event_title">Events</string>
+	<string name="speaker_title">Speakers</string>
+	<string name="partner_title">Partners</string>
+	<string name="news_title">News</string>
+	<string name="twitter_title">Twitter</string>
+	<string name="about_title">About</string>
+	
+</resources>

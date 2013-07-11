@@ -29,15 +29,15 @@
 	<string name="net_alert_offline_title">Pas de connexion Internet</string>
 	<string name="net_alert_offline_text">Merci d'activer le réseau 3G ou wifi de votre mobile</string>
 	<string name="net_alert_json_title">Contenu non valide</string>
-	<string name="net_alert_json_text">Le contenu envoyé par le serveur n'est pas valide.\nMerci de réessayer plus tard.</string>
+	<string name="net_alert_json_text">Le contenu envoyé par le serveur n'est pas valide.\nMerci de réessayer plus tard</string>
 	<string name="net_alert_401_title">Accès refusé</string>
-	<string name="net_alert_401_text">Identifiant ou mot de passe incorrect.\nMerci de les saisir de nouveau et vous reconnecter.</string>
+	<string name="net_alert_401_text">Identifiant ou mot de passe incorrect.\nMerci de les saisir de nouveau et vous reconnecter</string>
 	<string name="net_alert_404_title">Fichier non trouvé</string>
-	<string name="net_alert_404_text">Le fichier demandé n'as pas été trouvé.\nMerci de réessayer plus tard.</string>
+	<string name="net_alert_404_text">Le fichier demandé n'as pas été trouvé.\nMerci de réessayer plus tard</string>
 	<string name="net_alert_406_title">Accès refusé</string>
-	<string name="net_alert_406_text">Identifiant ou mot de passe incorrect.\nMerci de vous reconnecter.</string>
+	<string name="net_alert_406_text">Identifiant ou mot de passe incorrect.\nMerci de vous reconnecter</string>
 	<string name="net_alert_503_title">Problème de connexion</string>
-	<string name="net_alert_503_text">Impossible de joindre le serveur.\nVérifier votre connexion Internet et réessayer.</string>
+	<string name="net_alert_503_text">Impossible de joindre le serveur.\nVérifier votre connexion Internet et réessayer</string>
 	
 	<string name="event_title">Événements</string>
 	<string name="speaker_title">Speakers</string>
